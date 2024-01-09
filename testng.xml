@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="11" parallel="tests">
+<listeners>
+<listener class-name="tiktyn.Listeners"/>
+</listeners>
+  
+  <test name="Validating User login in chrome">
+  <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="tiktyn.validlogin"/>
+    </classes>
+      </test> 
+      <test name="Validating User login in firefox">
+  <parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <class name="tiktyn.validlogin"/>
+    </classes>
+      </test> 
+     
+   
+   <test name="Validating Login Page Text chrome">
+   <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="tiktyn.ValidateLoginPageTitle"/>
+    </classes>
+      </test>
+       <test name="Validating Login Page Text firefox">
+   <parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <class name="tiktyn.ValidateLoginPageTitle"/>
+    </classes>
+      </test>
+      
+      
+      <test name="Validating Forgot password header chrome">
+      <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="tiktyn.forgotpassword"/>
+    </classes>
+      </test>
+        <test name="Validating Forgot password header firefox">
+      <parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <class name="tiktyn.forgotpassword"/>
+    </classes>
+      </test>
+      
+      
+      <test name="Validating Dashboard Header chrome">
+      <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="tiktyn.dashboardHeader"/>
+    </classes>
+      </test>
+       <test name="Validating Dashboard Header firefox">
+      <parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <class name="tiktyn.dashboardHeader"/>
+    </classes>
+      </test>
+     
+</suite> 
